@@ -51,4 +51,9 @@ public class ProductController {
         productService.edit(product,index);
         return modelAndView;
     }
+
+    @GetMapping("/upload")
+    public String upload(){
+        return "up";
+    }
 }

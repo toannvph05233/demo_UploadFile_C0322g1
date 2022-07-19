@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="file" id="fileImg">
+<button onclick="uploadFile()">Up</button>
+</body>
+</html>
+
+<script>
+    function uploadFile() {
+        let fileImg = document.getElementById("fileImg").files;
+        var formData = new FormData();
+        formData.append("file", fileImg[0]);
+
+        $.ajax({
+            contentType : false,
+            processData : false,
+            type: "POST",
+            data: formData,
+            url: "http://localhost:8080/up",
+            success: function (data) {
+                alert(data)
+            }
+        });
+
+    }
+</script>

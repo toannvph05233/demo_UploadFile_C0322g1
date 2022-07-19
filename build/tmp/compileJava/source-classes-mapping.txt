@@ -1,16 +1,20 @@
 com/codegym/service/ProductService.java
  com.codegym.service.ProductService
-com/codegym/service/CategoryService.java
- com.codegym.service.CategoryService
-com/codegym/service/CRUD.java
- com.codegym.service.CRUD
-com/codegym/model/Category.java
- com.codegym.model.Category
-com/codegym/model/Product.java
- com.codegym.model.Product
 com/codegym/controller/ProductController.java
  com.codegym.controller.ProductController
+com/codegym/model/UpLoadImg.java
+ com.codegym.model.UpLoadImg
+com/codegym/service/CRUD.java
+ com.codegym.service.CRUD
 com/codegym/config/WebConfig.java
  com.codegym.config.WebConfig
+com/codegym/model/Product.java
+ com.codegym.model.Product
+com/codegym/service/CategoryService.java
+ com.codegym.service.CategoryService
+com/codegym/model/Category.java
+ com.codegym.model.Category
 com/codegym/config/ApplicationInitializer.java
  com.codegym.config.ApplicationInitializer
+com/codegym/controller/RestProductController.java
+ com.codegym.controller.RestProductController
